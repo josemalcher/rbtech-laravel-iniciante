@@ -27,8 +27,9 @@ http://dev.rbtech.info/laravel-iniciantes-introducao/
 
 - http://dev.rbtech.info/laravel-iniciantes-introducao/
 
-
-
+```
+    composer create-project laravel/laravel meu_projeto 5.2.x-dev
+```
 
 [Voltar ao Índice](#indice)
 

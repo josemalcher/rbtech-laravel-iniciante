@@ -155,3 +155,34 @@ modules.xml
 
 
 # End of https://www.gitignore.io/api/laravel,intellij,composer,phpstorm+all
+
+# Created by https://www.gitignore.io/api/laravel
+
+
+
+
+###### meu_projeto/ #######
+### Laravel ###
+meu_projeto/vendor/
+meu_projeto/node_modules/
+meu_projeto/npm-debug.log
+
+# Laravel 4 specific
+meu_projeto/bootstrap/compiled.php
+meu_projeto/app/storage/
+
+# Laravel 5 & Lumen specific
+meu_projeto/public/storage
+meu_projeto/public/hot
+meu_projeto/storage/*.key
+meu_projeto/.env.*.php
+meu_projeto/.env.php
+meu_projeto/.env
+meu_projeto/Homestead.yaml
+meu_projeto/Homestead.json
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
+
+
+# End of https://www.gitignore.io/api/laravel
