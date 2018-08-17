@@ -140,7 +140,7 @@ Options:
       --resource        Generate a resource controller class.
   -h, --help            Display this help message
   -q, --quiet           Do not output any message
-  -V, --version         Display this application version
+  -V, --version         Display trouthis application version
       --ansi            Force ANSI output
       --no-ansi         Disable ANSI output
   -n, --no-interaction  Do not ask any interactive question
@@ -156,7 +156,66 @@ Help:
 
 ---
 
-## <a name="parte3"></a>
+## <a name="parte3">Routes</a>
+
+- https://laravel.com/docs/5.2/routing
+- https://laravel.com/docs/5.2/facades
+
+```php
+<?php
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('/teste', function () {
+    echo "/teste";
+});
+
+// Ex:
+Route::get('usuarios', 'UsuarioController@intex');
+
+// Ex2:
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password'=> 'Auth\PasswordController'
+]);
+
+//ex3: parâmetros
+Route::any('/teste/{teste}', function ($teste) {
+    echo $teste;
+});
+// OU
+Route::get('/teste/{teste}', function ($teste) {
+    echo $teste;
+});
+```
+
+```
+λ php artisan route:list
++--------+--------------------------------+--------------------------------------------------------+------+------------------------------------------------------------+------------+
+| Domain | Method                         | URI                                                    | Name | Action                                                     | Middleware |
++--------+--------------------------------+--------------------------------------------------------+------+------------------------------------------------------------+------------+
+|        | GET|HEAD                       | /                                                      |      | Closure                                                    | web        |
+|        | GET|HEAD                       | auth/login/{one?}/{two?}/{three?}/{four?}/{five?}      |      | App\Http\Controllers\Auth\AuthController@getLogin          | web,guest  |
+|        | POST                           | auth/login/{one?}/{two?}/{three?}/{four?}/{five?}      |      | App\Http\Controllers\Auth\AuthController@postLogin         | web,guest  |
+|        | GET|HEAD                       | auth/logout/{one?}/{two?}/{three?}/{four?}/{five?}     |      | App\Http\Controllers\Auth\AuthController@getLogout         | web,guest  |
+|        | GET|HEAD                       | auth/register/{one?}/{two?}/{three?}/{four?}/{five?}   |      | App\Http\Controllers\Auth\AuthController@getRegister       | web,guest  |
+|        | POST                           | auth/register/{one?}/{two?}/{three?}/{four?}/{five?}   |      | App\Http\Controllers\Auth\AuthController@postRegister      | web,guest  |
+|        | GET|HEAD|POST|PUT|PATCH|DELETE | auth/{_missing}                                        |      | App\Http\Controllers\Auth\AuthController@missingMethod     | web,guest  |
+|        | GET|HEAD                       | password/broker/{one?}/{two?}/{three?}/{four?}/{five?} |      | App\Http\Controllers\Auth\PasswordController@getBroker     | web,guest  |
+|        | GET|HEAD                       | password/email/{one?}/{two?}/{three?}/{four?}/{five?}  |      | App\Http\Controllers\Auth\PasswordController@getEmail      | web,guest  |
+|        | POST                           | password/email/{one?}/{two?}/{three?}/{four?}/{five?}  |      | App\Http\Controllers\Auth\PasswordController@postEmail     | web,guest  |
+|        | GET|HEAD                       | password/reset/{one?}/{two?}/{three?}/{four?}/{five?}  |      | App\Http\Controllers\Auth\PasswordController@getReset      | web,guest  |
+|        | POST                           | password/reset/{one?}/{two?}/{three?}/{four?}/{five?}  |      | App\Http\Controllers\Auth\PasswordController@postReset     | web,guest  |
+|        | GET|HEAD|POST|PUT|PATCH|DELETE | password/{_missing}                                    |      | App\Http\Controllers\Auth\PasswordController@missingMethod | web,guest  |
+|        | GET|HEAD                       | teste                                                  |      | Closure                                                    | web        |
+|        | GET|HEAD                       | usuarios                                               |      | App\Http\Controllers\UsuarioController@intex               | web        |
++--------+--------------------------------+--------------------------------------------------------+------+------------------------------------------------------------+------------+
+
+C:\Users\josemalcher\Documents\01-SERVs\xampp_php7.2.1\htdocs\rbtech-laravel-iniciante\meu_projeto (master)
+```
+
 
 
 [Voltar ao Índice](#indice)
