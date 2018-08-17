@@ -222,7 +222,99 @@ C:\Users\josemalcher\Documents\01-SERVs\xampp_php7.2.1\htdocs\rbtech-laravel-ini
 
 ---
 
-## <a name="parte4"></a>
+## <a name="parte4">Controllers, Views e Blade</a>
+
+```
+λ php artisan make:controller UsuarioController
+Controller created successfully.
+```
+
+```php
+<?php
+Route::controller('usuarios', 'UsuarioController');
+```
+```php
+<?php
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+class UsuarioController extends Controller
+{
+    public function index(){
+       echo 'Olá mundo, Controller';
+    }
+
+    public function getIndex(){
+
+    }
+
+    public function postIndex(){
+
+    }
+    public function getLista(){
+
+    }
+}
+
+```
+```
+λ php artisan route:list
++--------+--------------------------------+-------------------------------------------------------+------+------------------------------------------------------+------------+
+| Domain | Method                         | URI                                                   | Name | Action                                               | Middleware |
++--------+--------------------------------+-------------------------------------------------------+------+------------------------------------------------------+------------+
+|        | GET|HEAD                       | usuarios                                              |      | App\Http\Controllers\UsuarioController@getIndex      | web        |
+|        | POST                           | usuarios                                              |      | App\Http\Controllers\UsuarioController@postIndex     | web        |
+|        | GET|HEAD                       | usuarios/index/{one?}/{two?}/{three?}/{four?}/{five?} |      | App\Http\Controllers\UsuarioController@getIndex      | web        |
+|        | POST                           | usuarios/index/{one?}/{two?}/{three?}/{four?}/{five?} |      | App\Http\Controllers\UsuarioController@postIndex     | web        |
+|        | GET|HEAD                       | usuarios/lista/{one?}/{two?}/{three?}/{four?}/{five?} |      | App\Http\Controllers\UsuarioController@getLista      | web        |
+|        | GET|HEAD|POST|PUT|PATCH|DELETE | usuarios/{_missing}                                   |      | App\Http\Controllers\UsuarioController@missingMethod | web        |
++--------+--------------------------------+-------------------------------------------------------+------+------------------------------------------------------+------------+
+
+```
+
+- https://laravel.com/docs/5.2/blade
+
+- meu_projeto/app/Http/Controllers/UsuarioController.php
+
+```php
+<?php
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+class UsuarioController extends Controller
+{
+    public function index(){
+       //echo 'Olá mundo, Controller';
+       return view('usuarios',[
+           'texto'=>'Lista de Usuários',
+           'checagem'=> false,
+           'usuarios'=> ['usuario1','usuario2','usuario3', 'usuario4']
+       ]);
+    }
+}
+
+```
+
+- meu_projeto/resources/views/usuarios.blade.php
+
+```php
+Sem passagem: Olá da view! (normal)
+Padrão: <?php echo $texto ?>
+Blade: {{$texto}}
+
+---------------------
+
+{{$texto}}
+@if($checagem == true)
+    Checatem  = true
+@else
+    chedagem = false
+@endif
+
+@foreach($usuarios as $usuario)
+    {{$usuario}} <br>
+@endforeach
+```
 
 
 [Voltar ao Índice](#indice)

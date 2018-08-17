@@ -2,13 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Auth\Access\AuthorizesResources;
+use Illuminate\Http\Request;
 
-class UsuarioController extends BaseController
+use App\Http\Requests;
+
+class UsuarioController extends Controller
 {
-    use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
+    public function index(){
+       //echo 'Olá mundo, Controller';
+       return view('usuarios',[
+           'texto'=>'Lista de Usuários',
+           'checagem'=> false,
+           'usuarios'=> ['usuario1','usuario2','usuario3', 'usuario4']
+       ]);
+    }
+/*
+    public function getIndex(){
+
+    }
+
+    public function postIndex(){
+
+    }
+    public function getLista(){
+
+    }*/
 }

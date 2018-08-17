@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78dcaaa-3cf8-4c22-b472-7324f4a85880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/meu_projeto/app/Http/Controllers/UsuarioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meu_projeto/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/meu_projeto/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meu_projeto/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/meu_projeto/app/Http/routes.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,31 +27,31 @@
         <counts>
           <entry key="gitignore" value="3" />
           <entry key="md" value="1" />
-          <entry key="php" value="6" />
+          <entry key="php" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="1" />
+          <entry key="Blade" value="2" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="5" />
+          <entry key="PHP" value="7" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="32" />
-          <entry key="md" value="79" />
-          <entry key="php" value="256" />
-          <entry key="txt" value="7" />
+          <entry key="md" value="182" />
+          <entry key="php" value="906" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="12" />
-          <entry key="Markdown" value="79" />
-          <entry key="PHP" value="244" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="Blade" value="292" />
+          <entry key="Markdown" value="181" />
+          <entry key="PHP" value="615" />
+          <entry key="PLAIN_TEXT" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -65,26 +64,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="449">
-                <caret line="179" column="41" lean-forward="true" selection-start-line="179" selection-start-column="41" selection-end-line="179" selection-end-column="41" />
+              <first_editor relative-caret-position="57">
+                <caret line="224" column="46" lean-forward="true" selection-start-line="224" selection-start-column="20" selection-end-line="224" selection-end-column="46" />
+                <folding>
+                  <element signature="e#38#66#0" expanded="true" />
+                  <element signature="e#38#66#0" expanded="true" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/meu_projeto/app/Http/routes.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meu_projeto/app/Http/Controllers/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="84">
+              <caret line="6" column="22" selection-end-line="30" />
               <folding>
-                <element signature="e#7#392#0#PHP" expanded="true" />
+                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meu_projeto/resources/views/usuarios.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="19" lean-forward="true" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -104,9 +116,10 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/meu_projeto/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/meu_projeto/app/Http/Controllers/UsuarioController.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/meu_projeto/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/meu_projeto/app/Http/Controllers/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/meu_projeto/resources/views/usuarios.blade.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -225,7 +238,7 @@
       <workItem from="1533768715029" duration="982000" />
       <workItem from="1533769735999" duration="461000" />
       <workItem from="1533770238139" duration="1576000" />
-      <workItem from="1534449556930" duration="4870000" />
+      <workItem from="1534449556930" duration="8758000" />
     </task>
     <task id="LOCAL-00001" summary="01 - Laravel para iniciantes - Introdução">
       <created>1534461971037</created>
@@ -241,11 +254,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534469995635</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="03 - Routes">
+      <created>1534515685127</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534515685127</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7889000" />
+    <option name="totallyTimeSpent" value="11777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1026" extended-state="0" />
@@ -281,7 +301,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01 - Laravel para iniciantes - Introdução" />
     <MESSAGE value="01 - Artisan" />
-    <option name="LAST_COMMIT_MESSAGE" value="01 - Artisan" />
+    <MESSAGE value="03 - Routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="03 - Routes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -311,33 +332,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="449">
-            <caret line="179" column="41" lean-forward="true" selection-start-line="179" selection-start-column="41" selection-end-line="179" selection-end-column="41" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meu_projeto/app/Http/Controllers/UsuarioController.php">
+    <entry file="file://$PROJECT_DIR$/meu_projeto/resources/views/usuarios.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#40#85#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="266">
+          <caret line="19" lean-forward="true" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meu_projeto/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="280">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding>
             <element signature="e#7#392#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meu_projeto/app/Http/Controllers/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="22" selection-end-line="30" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="57">
+            <caret line="224" column="46" lean-forward="true" selection-start-line="224" selection-start-column="20" selection-end-line="224" selection-end-column="46" />
+            <folding>
+              <element signature="e#38#66#0" expanded="true" />
+              <element signature="e#38#66#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
