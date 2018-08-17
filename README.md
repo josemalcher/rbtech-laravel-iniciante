@@ -321,7 +321,73 @@ Blade: {{$texto}}
 
 ---
 
-## <a name="parte5"></a>
+## <a name="parte5">Banco de dados e Migrations</a>
+
+- https://laravel.com/docs/5.2/migrations
+
+```
+λ php artisan make:migration create_usuarios
+Created Migration: 2018_08_17_212600_create_usuarios
+```
+
+Condigurações do BD:
+
+- meu_projeto/.env
+
+```
+DB_DATABASE=rbtech_laravelbasico1
+DB_USERNAME=root
+DB_PASSWORD=*****
+```
+
+```
+λ php artisan migrate
+Migration table created successfully.
+Migrated: 2014_10_12_000000_create_users_table
+Migrated: 2014_10_12_100000_create_password_resets_table
+
+```
+
+```
+λ php artisan migrate:rollback
+Rolled back: 2014_10_12_100000_create_password_resets_table
+Rolled back: 2014_10_12_000000_create_users_table
+```
+
+```
+λ php artisan migrate
+Migrated: 2014_10_12_000000_create_users_table
+Migrated: 2014_10_12_100000_create_password_resets_table
+
+λ php artisan make:migration create_clientes_table --create=clientes
+Created Migration: 2018_08_17_215106_create_clientes_table
+```
+
+- meu_projeto/database/migrations/2018_08_17_215106_create_clientes_table.php
+
+```php
+ public function up()
+    {
+        Schema::create('clientes', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nome', 60);
+            $table->text('endereco');
+            $table->integer('numero');
+            $table->timestamps();
+        });
+    }
+```
+
+```
+λ php artisan migrate
+Migrated: 2018_08_17_215106_create_clientes_table
+
+```
+
+```
+λ php artisan make:model Cliente
+Model created successfully.
+```
 
 
 [Voltar ao Índice](#indice)

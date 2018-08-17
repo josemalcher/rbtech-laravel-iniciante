@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/meu_projeto/app" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/classpreloader/classpreloader" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/jakub-onderka/php-console-color" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/jakub-onderka/php-console-highlighter" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/jeremeamia/SuperClosure" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/mtdowling/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/dom-crawler" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/polyfill-php56" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/polyfill-util" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/meu_projeto/vendor/webmozart/assert" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

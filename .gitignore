@@ -38,7 +38,7 @@ composer.phar
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
 # .idea/modules.xml
-# .idea/*.iml
+.idea/*.iml
 # .idea/modules
 
 # CMake
@@ -163,23 +163,23 @@ modules.xml
 
 ###### meu_projeto/ #######
 ### Laravel ###
-meu_projeto/vendor/
-meu_projeto/node_modules/
-meu_projeto/npm-debug.log
+/meu_projeto/vendor/
+/meu_projeto/node_modules/
+/meu_projeto/npm-debug.log
 
 # Laravel 4 specific
-meu_projeto/bootstrap/compiled.php
-meu_projeto/app/storage/
+/meu_projeto/bootstrap/compiled.php
+/meu_projeto/app/storage/
 
 # Laravel 5 & Lumen specific
-meu_projeto/public/storage
-meu_projeto/public/hot
-meu_projeto/storage/*.key
-meu_projeto/.env.*.php
-meu_projeto/.env.php
-meu_projeto/.env
-meu_projeto/Homestead.yaml
-meu_projeto/Homestead.json
+/meu_projeto/public/storage
+/meu_projeto/public/hot
+/meu_projeto/storage/*.key
+/meu_projeto/.env.*.php
+/meu_projeto/.env.php
+/meu_projeto/.env
+/meu_projeto/Homestead.yaml
+/meu_projeto/Homestead.json
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
