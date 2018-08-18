@@ -547,8 +547,121 @@ class Cliente extends Model
 
 ## <a name="parte7">CRUD parte 1</a>
 
+```
+php artisan make:auth
 
+Created View: C:\...\crud_basico\resources/views/auth/login.blade.php
+Created View: C:\...\crud_basico\resources/views/auth/register.blade.php
+Created View: C:\...\crud_basico\resources/views/auth/passwords/email.blade.php
+Created View: C:\...\crud_basico\resources/views/auth/passwords/reset.blade.php
+Created View: C:\...\crud_basico\resources/views/auth/emails/password.blade.php
+Created View: C:\...\crud_basico\resources/views/layouts/app.blade.php
+Created View: C:\...\crud_basico\resources/views/home.blade.php
+Created View: C:\...\crud_basico\resources/views/welcome.blade.php
+Installed HomeController.
+Updated Routes File.
+Authentication scaffolding generated successfully!
 
+```
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=rbtech_crudbasico
+DB_USERNAME=root
+DB_PASSWORD=root
+```
+
+```
+php artisan migrate
+Migration table created successfully.
+Migrated: 2014_10_12_000000_create_users_table
+Migrated: 2014_10_12_100000_create_password_resets_table
+
+```
+
+- https://github.com/barryvdh/laravel-ide-helper
+
+```
+- composer require barryvdh/laravel-ide-helper
+
+# config/app.php
+ Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+ 
+- php artisan ide-helper:generate
+A new helper file was written to _ide_helper.php
+Unexpected no document on Illuminate\Database\Eloquent\Model
+Wrote expected docblock to C:\Users\josemalcher\Documents\01-SERVs\xampp_php7.2.1\htdocs\rbtech-laravel-iniciante\crud_basico\vendor\laravel\framework\src\Illuminate\Databas
+e\Eloquent\Model.php
+
+```
+
+```
+php artisan make:controller ClientesController
+Controller created successfully.
+
+```
+
+- crud_basico/app/Http/Controllers/ClientesController.php
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+
+class ClientesController extends Controller
+{
+    public function index(){
+        return view('clientes.lista');
+    }
+
+    public function novo(){
+        return view('clientes.formulario');
+    }
+}
+
+```
+
+- crud_basico/app/Http/routes.php
+
+```php
+<?php
+Route::auth();
+Route::get('/','HomeController@index');
+Route::get('/home', 'HomeController@index');
+Route::get('/clientes','ClientesController@index');
+Route::get('/clientes/novo','ClientesController@novo');
+```
+
+- crud_basico/resources/views/clientes/lista.blade.php
+
+```blade
+@extends('layouts.app')
+
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Clientes
+                        <a class="pull-right" href="{{url('clientes/novo')}}">Novo Cliente</a>
+                    </div>
+
+                    <div class="panel-body">
+                        Listagem de Clientes
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+```
 
 [Voltar ao Índice](#indice)
 

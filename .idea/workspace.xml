@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b78dcaaa-3cf8-4c22-b472-7324f4a85880" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b78dcaaa-3cf8-4c22-b472-7324f4a85880" name="Default Changelist" comment="07 - CRUD parte 1 - Base: 1.1: php artisan make:auth">
+      <change afterPath="$PROJECT_DIR$/crud_basico/_ide_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/app/Http/Controllers/ClientesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/auth/emails/password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/clientes/lista.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_basico/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_basico/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud_basico/app/Http/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_basico/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/crud_basico/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_basico/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/crud_basico/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_basico/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud_basico/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_basico/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud_basico/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,37 +46,39 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="env" value="1" />
+          <entry key="env" value="2" />
           <entry key="example" value="1" />
-          <entry key="gitignore" value="8" />
+          <entry key="gitignore" value="9" />
           <entry key="gitkeep" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="13" />
+          <entry key="php" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="2" />
+          <entry key=".env file" value="1" />
+          <entry key="Blade" value="9" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="11" />
-          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="PHP" value="18" />
+          <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="env" value="8" />
+          <entry key="env" value="37" />
           <entry key="gitignore" value="105" />
-          <entry key="md" value="341" />
-          <entry key="php" value="1084" />
-          <entry key="txt" value="43" />
+          <entry key="md" value="431" />
+          <entry key="php" value="1458" />
+          <entry key="txt" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="292" />
-          <entry key="Markdown" value="340" />
-          <entry key="PHP" value="793" />
-          <entry key="PLAIN_TEXT" value="156" />
+          <entry key=".env file" value="29" />
+          <entry key="Blade" value="529" />
+          <entry key="Markdown" value="430" />
+          <entry key="PHP" value="930" />
+          <entry key="PLAIN_TEXT" value="177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -78,9 +95,10 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="361">
-                <caret line="550" selection-start-line="550" selection-end-line="550" />
+              <first_editor relative-caret-position="331">
+                <caret line="638" selection-start-line="633" selection-end-line="638" />
                 <folding>
+                  <element signature="e#38#66#0" expanded="true" />
                   <element signature="e#38#66#0" expanded="true" />
                   <element signature="e#38#66#0" expanded="true" />
                 </folding>
@@ -90,11 +108,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/Controllers/ClientesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="197" column="25" lean-forward="true" selection-start-line="197" selection-start-column="25" selection-end-line="197" selection-end-column="25" />
+            <state relative-caret-position="224">
+              <caret line="18" lean-forward="true" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/lista.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -119,8 +164,16 @@
         <option value="$PROJECT_DIR$/meu_projeto/.env" />
         <option value="$PROJECT_DIR$/meu_projeto/database/migrations/2018_08_17_215106_create_clientes_table.php" />
         <option value="$PROJECT_DIR$/meu_projeto/app/Cliente.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/crud_basico/.env" />
+        <option value="$PROJECT_DIR$/crud_basico/config/app.php" />
+        <option value="$PROJECT_DIR$/crud_basico/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/crud_basico/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/crud_basico/resources/views/clientes/lista.blade.php" />
+        <option value="$PROJECT_DIR$/crud_basico/app/Http/Controllers/ClientesController.php" />
+        <option value="$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/crud_basico/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -219,6 +272,69 @@
               <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
               <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="clientes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rbtech-laravel-iniciante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rbtech-laravel-iniciante" type="462c0819:PsiDirectoryNode" />
+              <item name="crud_basico" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -258,7 +374,7 @@
       <workItem from="1533770238139" duration="1576000" />
       <workItem from="1534449556930" duration="10078000" />
       <workItem from="1534541536852" duration="6141000" />
-      <workItem from="1534594042982" duration="2058000" />
+      <workItem from="1534594042982" duration="7151000" />
     </task>
     <task id="LOCAL-00001" summary="01 - Laravel para iniciantes - Introdução">
       <created>1534461971037</created>
@@ -316,17 +432,24 @@
       <option name="project" value="LOCAL" />
       <updated>1534565605449</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="07 - CRUD parte 1 - Base">
+      <created>1534597163422</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1534597163422</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21296000" />
+    <option name="totallyTimeSpent" value="26389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="778" y="0" width="1145" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25714287" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25529954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -387,7 +510,9 @@
     <MESSAGE value="05 - Banco de dados e Migrations" />
     <MESSAGE value="Ajuste gitignore" />
     <MESSAGE value="06 - Eloquent e Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="06 - Eloquent e Model" />
+    <MESSAGE value="07 - CRUD parte 1 - Báse" />
+    <MESSAGE value="07 - CRUD parte 1 - Base" />
+    <option name="LAST_COMMIT_MESSAGE" value="07 - CRUD parte 1 - Base" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/meu_projeto/app/User.php">
@@ -466,12 +591,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" lean-forward="true" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="85" lean-forward="true" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/Controllers/ClientesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" lean-forward="true" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/lista.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="361">
-            <caret line="550" selection-start-line="550" selection-end-line="550" />
+          <first_editor relative-caret-position="331">
+            <caret line="638" selection-start-line="633" selection-end-line="638" />
             <folding>
+              <element signature="e#38#66#0" expanded="true" />
               <element signature="e#38#66#0" expanded="true" />
               <element signature="e#38#66#0" expanded="true" />
             </folding>
@@ -480,10 +678,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="197" column="25" lean-forward="true" selection-start-line="197" selection-start-column="25" selection-end-line="197" selection-end-column="25" />
+        <state relative-caret-position="84">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
