@@ -394,7 +394,152 @@ Model created successfully.
 
 ---
 
-## <a name="parte6"></a>
+## <a name="parte6">Eloquent e Model</a>
+
+```
+λ php artisan tinker
+Psy Shell v0.7.2 (PHP 7.2.1 — cli) by Justin Hileman
+>>> $cliente = new App\Cliente;
+=> App\Cliente {#631}
+>>> $cliente;
+=> App\Cliente {#631}
+>>> $cliente->nome = 'Cliente 1';
+=> "Cliente 1"
+>>> $cliente->endereco = 'Rua tal tal';
+=> "Rua tal tal"
+>>> $cliente->numero = '123';
+=> "123"
+>>> $cliente;
+=> App\Cliente {#631
+     nome: "Cliente 1",
+     endereco: "Rua tal tal",
+     numero: "123",
+   }
+>>> $cliente->save();
+=> true
+>>> $cliente;
+=> App\Cliente {#631
+     nome: "Cliente 1",
+     endereco: "Rua tal tal",
+     numero: "123",
+     updated_at: "2018-08-18 03:45:43",
+     created_at: "2018-08-18 03:45:43",
+     id: 1,
+   }
+>>>
+```
+
+```
+>>> $cliente->nome = 'Cliente alterado';
+=> "Cliente alterado"
+>>> $cliente;
+=> App\Cliente {#631
+     nome: "Cliente alterado",
+     endereco: "Rua tal tal",
+     numero: "123",
+     updated_at: "2018-08-18 03:45:43",
+     created_at: "2018-08-18 03:45:43",
+     id: 1,
+   }
+>>>
+```
+
+```php
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Cliente extends Model
+{
+    protected $fillable = [
+        'nome',
+        'endereco',
+        'numero'
+    ];
+}
+
+```
+
+```
+>>> $cliente = App\Cliente::create(['nome'=>'cliente 2', 'endereco'=>'Endereco 2', 'numero'=>'321']);
+=> App\Cliente {#644
+     nome: "cliente 2",
+     endereco: "Endereco 2",
+     numero: "321",
+     updated_at: "2018-08-18 03:59:46",
+     created_at: "2018-08-18 03:59:46",
+     id: 2,
+   }
+>>>
+```
+
+```
+λ php artisan tinker
+Psy Shell v0.7.2 (PHP 7.2.1 — cli) by Justin Hileman
+>>> $cliente2 = App\Cliente::find(2);
+=> App\Cliente {#644
+     id: 2,
+     nome: "cliente 2",
+     endereco: "Endereco 2",
+     numero: 321,
+     created_at: "2018-08-18 03:59:46",
+     updated_at: "2018-08-18 03:59:46",
+   }
+>>> $cliente2 = App\Cliente::find(10);
+=> null
+>>> $cliente2 = App\Cliente::findOrFail(10);
+Illuminate\Database\Eloquent\ModelNotFoundException with message 'No query results for model [App\Cliente].'
+>>>
+```
+
+```
+>>> $cliente2 = App\Cliente::find(2);
+=> App\Cliente {#645
+     id: 2,
+     nome: "cliente 2",
+     endereco: "Endereco 2",
+     numero: 321,
+     created_at: "2018-08-18 03:59:46",
+     updated_at: "2018-08-18 03:59:46",
+   }
+>>> $cliente2->endereco = 'Endereco 2 Modificado';
+=> "Endereco 2 Modificado"
+>>> $cliente2->save();
+=> true
+>>> $cliente2 = App\Cliente::find(2);
+=> App\Cliente {#634
+     id: 2,
+     nome: "cliente 2",
+     endereco: "Endereco 2 Modificado",
+     numero: 321,
+     created_at: "2018-08-18 03:59:46",
+     updated_at: "2018-08-18 04:05:48",
+   }
+>>>
+```
+
+```php
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Cliente extends Model
+{
+    protected $table = 'clientes_ativos'; // mudança de padrão
+    protected $primaryKey = 'codigo_id';
+
+    protected $fillable = [
+        'nome',
+        'endereco',
+        'numero'
+    ];
+}
+
+```
 
 
 [Voltar ao Índice](#indice)
