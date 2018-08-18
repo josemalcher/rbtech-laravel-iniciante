@@ -541,47 +541,34 @@ class Cliente extends Model
 
 ```
 
-
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte7"></a>
+## <a name="parte7">CRUD parte 1</a>
 
 
-[Voltar ao Índice](#indice)
-
----
-
-## <a name="parte8"></a>
 
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte9"></a>
+## <a name="parte8">CRUD parte 2</a>
 
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte10"></a>
+## <a name="parte9">CRUD parte 3</a>
 
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte11"></a>
-
-
-[Voltar ao Índice](#indice)
-
----
-
-## <a name="parte12"></a>
+## <a name="parte10">CRUD parte 4</a>
 
 
 [Voltar ao Índice](#indice)

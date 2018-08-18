@@ -186,3 +186,29 @@ modules.xml
 
 
 # End of https://www.gitignore.io/api/laravel
+
+###### crud_basico/ #######
+### Laravel ###
+/crud_basico/vendor/*
+/crud_basico/node_modules
+/crud_basico/npm-debug.log
+
+# Laravel 4 specific
+/crud_basico/bootstrap/compiled.php
+/crud_basico/app/storage/
+
+# Laravel 5 & Lumen specific
+/crud_basico/public/storage
+/crud_basico/public/hot
+/crud_basico/storage/*.key
+/crud_basico/.env.*.php
+/crud_basico/.env.php
+/crud_basico/.env
+/crud_basico/Homestead.yaml
+/crud_basico/Homestead.json
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
+
+
+# End of https://www.gitignore.io/api/laravel
