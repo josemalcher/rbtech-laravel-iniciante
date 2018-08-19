@@ -662,12 +662,125 @@ Route::get('/clientes/novo','ClientesController@novo');
 @endsection
 
 ```
-
+ 
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte8">CRUD parte 2</a>
+
+- https://laravelcollective.com/
+
+- crud_basico/app/Http/Controllers/ClientesController.php
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Cliente;
+use Illuminate\Http\Request;
+use Redirect;
+
+
+class ClientesController extends Controller
+{
+    public function index()
+    {
+        return view('clientes.lista');
+    }
+
+    public function novo()
+    {
+        return view('clientes.formulario');
+    }
+
+    public function salvar(Request $request)
+    {
+        //var_dump($request);
+        $cliente = new Cliente();
+
+        $cliente = $cliente->create($request->all());
+        //return $cliente; // retorna json
+
+        \Session::flash('mensagem_sucesso', 'Cliente cadastrado com sucesso');
+
+
+        return Redirect::to('clientes/novo');
+
+    }
+}
+
+```
+
+- crud_basico/resources/views/clientes/formulario.blade.php
+
+```blade
+@extends('layouts.app')
+
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Cadastro de Clientes - Formulário
+                        <a class="pull-right" href="{{url('clientes')}}">Listagem de Cliente</a>
+                    </div>
+
+                    <div class="panel-body">
+                        @if(Session::has('mensagem_sucesso'))
+                            <div class="alert alert-success">{{Session::get('mensagem_sucesso')}}</div>
+                        @endif
+
+                        {!! Form::open(['url' => 'clientes/salvar']) !!}
+                        {!! Form::label('name', "Nome") !!}
+                        {!! Form::input('text', 'nome', '', ['class'=> 'form-control', 'autodocus', 'placeholder'=> 'Nome']) !!}
+
+                        {!! Form::label('endereco', "Endereço") !!}
+                        {!! Form::input('text', 'endereco', '', ['class'=> 'form-control', '', 'placeholder'=> 'Endereço']) !!}
+
+                        {!! Form::label('numero', "Número") !!}
+                        {!! Form::input('text', 'numero', '', ['class'=> 'form-control', '', 'placeholder'=> 'Número']) !!}
+                        <br>
+                        {!! Form::submit('Salvar', ['class'=>'btn btn-primary']) !!}
+
+                        {!! Form::close() !!}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+
+```
+
+- crud_basico/app/Http/routes.php
+
+```php
+<?php
+
+//Route::auth();
+//Route::get('/','HomeController@index');
+//Route::get('/home', 'HomeController@index');
+//Route::get('/clientes','ClientesController@index');
+//Route::get('/clientes/novo','ClientesController@novo');
+
+Route::get('usuarios', 'UsuariosController@index');
+
+Route::get('clientes', 'ClientesController@index');
+Route::get('clientes/novo', 'ClientesController@novo');
+Route::post('clientes/salvar', 'ClientesController@salvar');
+
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/', 'HomeController@index');
+    Route::auth();
+    Route::get('/home', 'HomeController@index');
+
+});
+
+```
 
 
 [Voltar ao Índice](#indice)

@@ -10,10 +10,28 @@
                     </div>
 
                     <div class="panel-body">
-                        Formulário...
+                        @if(Session::has('mensagem_sucesso'))
+                            <div class="alert alert-success">{{Session::get('mensagem_sucesso')}}</div>
+                        @endif
+
+                        {!! Form::open(['url' => 'clientes/salvar']) !!}
+                        {!! Form::label('name', "Nome") !!}
+                        {!! Form::input('text', 'nome', '', ['class'=> 'form-control', 'autodocus', 'placeholder'=> 'Nome']) !!}
+
+                        {!! Form::label('endereco', "Endereço") !!}
+                        {!! Form::input('text', 'endereco', '', ['class'=> 'form-control', '', 'placeholder'=> 'Endereço']) !!}
+
+                        {!! Form::label('numero', "Número") !!}
+                        {!! Form::input('text', 'numero', '', ['class'=> 'form-control', '', 'placeholder'=> 'Número']) !!}
+                        <br>
+                        {!! Form::submit('Salvar', ['class'=>'btn btn-primary']) !!}
+
+                        {!! Form::close() !!}
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+
