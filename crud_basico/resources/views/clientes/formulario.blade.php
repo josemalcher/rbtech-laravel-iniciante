@@ -14,15 +14,21 @@
                             <div class="alert alert-success">{{Session::get('mensagem_sucesso')}}</div>
                         @endif
 
-                        {!! Form::open(['url' => 'clientes/salvar']) !!}
+                        @if(Request::is('*/editar'))
+                            {!! Form::model($cliente, ['method'=>'PATCH', 'url'=>'clientes/'.$cliente->id]) !!}
+                        @else
+                            {!! Form::open(['url' => 'clientes/salvar']) !!}
+                        @endif
+
+
                         {!! Form::label('name', "Nome") !!}
-                        {!! Form::input('text', 'nome', '', ['class'=> 'form-control', 'autodocus', 'placeholder'=> 'Nome']) !!}
+                        {!! Form::input('text', 'nome', null, ['class'=> 'form-control', 'autodocus', 'placeholder'=> 'Nome']) !!}
 
                         {!! Form::label('endereco', "Endereço") !!}
-                        {!! Form::input('text', 'endereco', '', ['class'=> 'form-control', '', 'placeholder'=> 'Endereço']) !!}
+                        {!! Form::input('text', 'endereco', null, ['class'=> 'form-control', '', 'placeholder'=> 'Endereço']) !!}
 
                         {!! Form::label('numero', "Número") !!}
-                        {!! Form::input('text', 'numero', '', ['class'=> 'form-control', '', 'placeholder'=> 'Número']) !!}
+                        {!! Form::input('text', 'numero', null, ['class'=> 'form-control', '', 'placeholder'=> 'Número']) !!}
                         <br>
                         {!! Form::submit('Salvar', ['class'=>'btn btn-primary']) !!}
 

@@ -11,6 +11,27 @@
 
                     <div class="panel-body">
                         Listagem de Clientes
+
+                        <table class="table">
+                            <thead>
+                            <th>Nome</th>
+                            <th>Endereço</th>
+                            <th>Ações</th>
+                            </thead>
+                            <tbody>
+                            @foreach($clientes as $cliente)
+                                <tr>
+                                    <td>{{$cliente->nome}}</td>
+                                    <td>{{$cliente->endereco}}</td>
+                                    <td>{{$cliente->numero}}</td>
+                                    <td>
+                                        <a href="clientes/{{$cliente->id}}/editar" class="btn btn-default">Editar</a>
+                                        <button class="btn btn-danger">Excluir</button>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
