@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78dcaaa-3cf8-4c22-b472-7324f4a85880" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/rbtech-laravel-iniciante.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rbtech-laravel-iniciante.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,17 +18,19 @@
     <session id="69072810">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.129" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.open.time.98" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -60,18 +60,18 @@
           <entry key="gitignore" value="105" />
           <entry key="json" value="2" />
           <entry key="md" value="498" />
-          <entry key="php" value="3320" />
-          <entry key="txt" value="69" />
+          <entry key="php" value="3480" />
+          <entry key="txt" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="29" />
-          <entry key="Blade" value="1354" />
+          <entry key="Blade" value="1458" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="497" />
-          <entry key="PHP" value="1967" />
-          <entry key="PLAIN_TEXT" value="182" />
+          <entry key="PHP" value="2023" />
+          <entry key="PLAIN_TEXT" value="187" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -95,25 +95,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="816">
+              <first_editor relative-caret-position="11115">
                 <caret line="855" selection-start-line="855" selection-end-line="855" />
-                <folding>
-                  <element signature="e#38#66#0" expanded="true" />
-                  <element signature="e#38#66#0" expanded="true" />
-                  <element signature="e#38#66#0" expanded="true" />
-                  <element signature="e#38#54#0" expanded="true" />
-                </folding>
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/Controllers/ClientesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="37" selection-start-line="37" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="754">
+              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
@@ -124,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/lista.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="442">
+              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -133,17 +127,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="39" column="14" lean-forward="true" selection-end-line="43" />
+            <state relative-caret-position="195">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+            <state relative-caret-position="260">
+              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+              <folding>
+                <element signature="e#7#23#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,11 +181,11 @@
         <option value="$PROJECT_DIR$/meu_projeto/app/Http/Controllers/UsuarioController.php" />
         <option value="$PROJECT_DIR$/crud_basico/app/Cliente.php" />
         <option value="$PROJECT_DIR$/crud_basico/database/migrations/2018_08_19_023939_create_clientes_table.php" />
+        <option value="$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/crud_basico/resources/views/clientes/lista.blade.php" />
         <option value="$PROJECT_DIR$/crud_basico/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php" />
         <option value="$PROJECT_DIR$/crud_basico/app/Http/Controllers/ClientesController.php" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -279,7 +276,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,6 +338,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,7 +379,9 @@
       <workItem from="1534612522820" duration="722000" />
       <workItem from="1534623062946" duration="11778000" />
       <workItem from="1534678553886" duration="6308000" />
-      <workItem from="1534851873875" duration="4777000" />
+      <workItem from="1534851873875" duration="5321000" />
+      <workItem from="1534946678441" duration="1187000" />
+      <workItem from="1534978877238" duration="2167000" />
     </task>
     <task id="LOCAL-00001" summary="01 - Laravel para iniciantes - Introdução">
       <created>1534461971037</created>
@@ -461,17 +460,24 @@
       <option name="project" value="LOCAL" />
       <updated>1534649973619</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="09 - CRUD parte 3">
+      <created>1534904370860</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534904370861</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50400000" />
+    <option name="totallyTimeSpent" value="54298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="782" y="0" width="1145" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928674" visible="true" weight="0.27373272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928674" visible="true" weight="0.28479263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5007133" side_tool="true" weight="0.26451612" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -536,7 +542,8 @@
     <MESSAGE value="07 - CRUD parte 1 - Base" />
     <MESSAGE value="07 - CRUD parte 1" />
     <MESSAGE value="08 - CRUD parte 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="08 - CRUD parte 2" />
+    <MESSAGE value="09 - CRUD parte 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="09 - CRUD parte 3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/meu_projeto/app/User.php">
@@ -709,50 +716,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/lista.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/Controllers/ClientesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="37" selection-start-line="37" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="39" column="14" lean-forward="true" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="816">
+          <first_editor relative-caret-position="11115">
             <caret line="855" selection-start-line="855" selection-end-line="855" />
-            <folding>
-              <element signature="e#38#66#0" expanded="true" />
-              <element signature="e#38#66#0" expanded="true" />
-              <element signature="e#38#66#0" expanded="true" />
-              <element signature="e#38#54#0" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/formulario.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/resources/views/clientes/lista.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        <state relative-caret-position="260">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <element signature="e#7#23#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_basico/app/Http/Controllers/ClientesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
